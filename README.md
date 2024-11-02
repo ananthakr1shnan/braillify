@@ -1,95 +1,142 @@
 <img width="1280" alt="readme-banner" src="https://github.com/user-attachments/assets/35332e92-44cb-425b-9dff-27bcf1023c6c">
 
-# [Project Name] 🎯
+# Braillify 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: TechDAWGS
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: Akshay KV - College of Engineering, Trivandrum
+- Member 2: Ananthakrishnan K - College of Engineering, Trivandrum
+- Member 3: Rishikesh - College of Engineering, Trivandrum
 
 ### Project Description
-[2-3 lines about what your project does]
+Our project, Braillify, is an AI-powered voice assistant that "helps" blind users get responses displayed in Braille—perfect for users who have zero vision but still want to enjoy some "top-quality" sarcasm in Braille!
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+Blind users often rely on speech output or tactile solutions, yet visual Braille display offers an amusing alternative, presenting an unexpected challenge for accessibility tools.
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+Our AI assistant allows users to ask any question and receive responses in Braille displayed on-screen. This innovative approach combines voice recognition and Braille, enhancing accessibility while providing an engaging user experience.
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+Languages Used:
+- Python
+
+Frameworks Used:
+- Streamlit
+
+Libraries Used:
+- `dotenv`: For loading environment variables.
+- `logging`: For application logging.
+- `speech_recognition`: For converting spoken input into text.
+- `groq`: For interacting with the Groq API.
+- `pySerial`: For Arduino communication.
+
+Tools Used:
+- Arduino: For hardware interaction.
+- Code editor: VS Code
 
 For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+Main Components:
+- Arduino Board (Arduino Uno)
+- Breadboard (for circuit assembly)
+- Push button (for voice input activation)
+- Wires (for connections)
+- Led bulbs (To show button state)
+
+Specifications:
+- Arduino Board
+- Connectivity: Serial communication via USB
+
+Tools Required:
+- Arduino IDE: For writing and uploading the Arduino code
+- Breadboard and Wires: For circuit connections
+- USB cable: For connecting Arduino to the computer
 
 ### Implementation
 For Software:
 # Installation
-[commands]
+To get started with the project, follow these commands to install the necessary dependencies:
+First clone this repository and move to project directory
+Then install the required packages using command below
+pip install streamlit python-dotenv pyserial SpeechRecognition groq
 
 # Run
-[commands]
+streamlit run app.py
 
 ### Project Documentation
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+![Braille1](https://github.com/user-attachments/assets/8bdb9791-edff-422c-9a6c-e0f8f0750e4c)
+This is the starting page
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+![Braille2](https://github.com/user-attachments/assets/cc025f05-57af-4090-bbb2-dc4c03de9363)
+This shows the query and response in braille
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+![Braille3](https://github.com/user-attachments/assets/12fcfbd8-44d5-4e2f-adff-1aeb9d4f4cef)
+We included orginal conversation in side bar, just to make sure that correct responses are recieved(Just for testing)
 
 # Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
+![softwareworkflow](https://github.com/user-attachments/assets/4f1c84aa-d69f-4174-8f51-8b9245e3377e)
 
 For Hardware:
 
 # Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
+![circuit](https://github.com/user-attachments/assets/7544351c-b78e-4da5-b059-903a3865d022)
+This circuit module generates a trigger based on the input switch and uses the red and green LEDs to display the button's state. The green LED likely indicates an "active" or "pressed" state, while the red LED might show an "inactive" or "not pressed" state. When the button is clicked, the LEDs provide a visual indication of the button's status, and Arduino provides the button state as input to the program.
 
 # Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
+![hardware](https://github.com/user-attachments/assets/eaf7941c-eb92-4334-8da8-d3578d9c2219)
+implementation
 
-![Build](Add photos of build process here)
-*Explain the build steps*
 
-![Final](Add photo of final product here)
-*Explain the final build*
+![componbraille](https://github.com/user-attachments/assets/0aded6ef-3dc1-40b4-997f-7b8fcbd663e8)
+components
+
+Button Detection:
+The button is connected to pin D9 of the Arduino, which reads its state as HIGH (pressed) or LOW (not pressed).
+This input serves as the trigger to control the LEDs and provide a digital signal based on the button's state.
+LED State Indicators:
+
+The red LED (D1) is connected to pin D8 with a 1k-ohm resistor and turns on when the button is not pressed, indicating an "inactive" state.
+The green LED (D2) is connected to pin D7 with a 1k-ohm resistor and turns on when the button is pressed, showing an "active" state.
+The Arduino program continuously checks the button’s state and switches the LEDs accordingly.
+Trigger Generation:
+
+When the button is pressed, the Arduino can use this as a trigger to perform specific actions, such as logging the event, activating another component, or sending a signal to an external system.
+The LEDs provide an immediate visual confirmation of the button state, while the trigger can be used in the Arduino program for further functionality.
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
+
+https://github.com/user-attachments/assets/70d3794b-9edf-4426-87df-8feca6b91ff6
+
+
+The demo video shows the working of the trigger and response generation in braille
+When button is pressed, speech recognition input is activated.Led also changes from red to green indicating state change
+After listening to the prompt, it recognizes and converts to text. The text input is given as prompt to llama 3.1 model and output is recieved.
+Both the prompt and response are converted to braille and it is printed.
+
+We have also implemented an additional function (given in sidebar) to show that correct responses are being generated for each prompt(Basically used for testing)
 
 # Additional Demos
-[Add any extra demo materials/links]
+
+
+https://github.com/user-attachments/assets/34529900-b1f5-4fd3-8459-097fe1ea2c6e
+
+A screen recording of interface.
+
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- Akshay KV: Implemented various python functions for speech recognition, braille conversion, text generation
+- Ananthakrishnan K: Implemented Streamlit interface, added function modules, connected Arduino with streamlit
+- Rishikesh: Constructed the circuit, programmed the arduino 
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
