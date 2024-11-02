@@ -13,7 +13,7 @@
 - Member 3: Rishikesh - College of Engineering, Trivandrum
 
 ### Project Description
-Our project, Braillify, is an AI-powered voice assistant that "helps" blind users get responses displayed in Braille—perfect for users who have zero vision but still want to enjoy some "top-quality" sarcasm in Braille!
+Our project, Braillify, is an AI-powered voice assistant that "helps" blind users get responses displayed in Braille—perfect for users who have zero vision but still want to enjoy some "top-quality" sarcasm in Braille! They cant read braille by touching the screen!!
 
 ### The Problem (that doesn't exist)
 Blind users often rely on speech output or tactile solutions, yet visual Braille display offers an amusing alternative, presenting an unexpected challenge for accessibility tools.
