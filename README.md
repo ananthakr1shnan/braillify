@@ -62,10 +62,10 @@ Tools Required:
 For Software:
 
 ### Installation
-To get started with the project, follow these commands to install the necessary dependencies:
-First clone this repository and move to project directory
-Then install the required packages using command below
-pip install streamlit python-dotenv pyserial SpeechRecognition groq
+- To get started with the project, follow these commands to install the necessary dependencies:
+- First clone this repository and move to project directory
+- Then install the required packages using command below
+- pip install streamlit python-dotenv pyserial SpeechRecognition groq
 
 ### Run
 streamlit run app.py
