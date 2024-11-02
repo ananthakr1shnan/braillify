@@ -1,0 +1,17 @@
+2024-11-02 19:55:34,797 - INFO: Available ports: ['COM4', 'COM3', 'COM5', 'COM10', 'COM6', 'COM9', 'COM7']
+2024-11-02 19:55:34,797 - INFO: Available ports: ['COM4', 'COM3', 'COM5', 'COM10', 'COM6', 'COM9', 'COM7']
+2024-11-02 19:55:34,797 - WARNING: Failed to connect to COM4: could not open port 'COM4': PermissionError(13, 'Access is denied.', None, 5)
+2024-11-02 19:55:34,798 - WARNING: Failed to connect to COM3: could not open port 'COM3': PermissionError(13, 'Access is denied.', None, 5)
+2024-11-02 19:55:34,799 - INFO: Successfully connected to Arduino on port COM5
+2024-11-02 19:55:39,986 - WARNING: Failed to connect to COM4: could not open port 'COM4': OSError(22, 'The semaphore timeout period has expired.', None, 121)
+2024-11-02 19:55:39,991 - WARNING: Failed to connect to COM3: could not open port 'COM3': PermissionError(13, 'Access is denied.', None, 5)
+2024-11-02 19:55:39,992 - WARNING: Failed to connect to COM5: could not open port 'COM5': PermissionError(13, 'Access is denied.', None, 5)
+2024-11-02 19:55:39,994 - INFO: Successfully connected to Arduino on port COM10
+2024-11-02 19:55:39,996 - INFO: Serial connection closed
+2024-11-02 19:56:36,036 - INFO: Button press timeout
+2024-11-02 19:56:36,041 - INFO: Serial connection closed
+2024-11-02 19:57:56,391 - INFO: Available ports: ['COM4', 'COM3', 'COM5', 'COM10', 'COM6', 'COM9', 'COM7']
+2024-11-02 19:58:01,581 - WARNING: Failed to connect to COM4: could not open port 'COM4': OSError(22, 'The semaphore timeout period has expired.', None, 121)
+2024-11-02 19:58:01,582 - WARNING: Failed to connect to COM3: could not open port 'COM3': PermissionError(13, 'Access is denied.', None, 5)
+2024-11-02 19:58:01,584 - INFO: Successfully connected to Arduino on port COM5
+2024-11-02 19:58:03,060 - INFO: Serial connection closed
