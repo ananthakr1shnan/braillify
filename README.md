@@ -1,5 +1,8 @@
 <img width="1280" alt="readme-banner" src="https://github.com/user-attachments/assets/35332e92-44cb-425b-9dff-27bcf1023c6c">
 
+## Demo video link
+https://drive.google.com/file/d/1gi1U_iAhzWogoI5aV6KIcfx23u7UtmMz/view?usp=drive_link
+
 # Braillify 🎯
 
 
